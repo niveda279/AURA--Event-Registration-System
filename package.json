@@ -1,0 +1,14 @@
+{
+  "name": "event-registration-system",
+  "version": "1.0.0",
+  "description": "A premium Event Registration System with Express and React",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently -n \"server,client\" -c \"bgBlue,bgGreen\" \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
